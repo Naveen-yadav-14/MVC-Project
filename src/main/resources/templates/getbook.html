@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Book Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2 class="mt-4">Book Details</h2>
+
+    <!-- Display Book Details if the book is found -->
+    <div th:if="${book != null}">
+        <table class="table table-bordered mt-4">
+            <tr>
+                <th>Book ID</th>
+                <td th:text="${book.bookId}"></td>
+            </tr>
+            <tr>
+                <th>Book Name</th>
+                <td th:text="${book.bookName}"></td>
+            </tr>
+            <tr>
+                <th>Author Name</th>
+                <td th:text="${book.bookAuthorName}"></td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td th:text="${book.bookPrice}"></td>
+            </tr>
+            <tr>
+                <th>Genre</th>
+                <td th:text="${book.bookGenre}"></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td th:text="${book.bookDescription}"></td>
+            </tr>
+            <tr>
+                <th>Publication Year</th>
+                <td th:text="${book.bookPublicationYear}"></td>
+            </tr>
+            <tr>
+                <th>Number of Pages</th>
+                <td th:text="${book.bookNumberOfPages}"></td>
+            </tr>
+            <tr>
+                <th>Language</th>
+                <td th:text="${book.bookLanguage}"></td>
+            </tr>
+            <tr>
+                <th>Country of Origin</th>
+                <td th:text="${book.bookCountryOfOrigin}"></td>
+            </tr>
+            <tr>
+                <th>Rating</th>
+                <td th:text="${book.bookRating}"></td>
+            </tr>
+            <tr>
+                <th>Stock Quantity</th>
+                <td th:text="${book.stockQuantity}"></td>
+            </tr>
+            <tr>
+                <th>Edition</th>
+                <td th:text="${book.edition}"></td>
+            </tr>
+            <tr>
+                <th>Added to Store Date</th>
+                <td th:text="${book.addedToStoreDate}"></td>
+            </tr>
+            <tr>
+                <th>Last Updated</th>
+                <td th:text="${book.lastUpdated}"></td>
+            </tr>
+            <tr>
+                <th>Best Seller</th>
+                <td th:text="${book.isBestSeller ? 'Yes' : 'No'}"></td>
+            </tr>
+            <tr>
+                <th>Discounted Price</th>
+                <td th:text="${book.bookDisPrice}"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Message if no book is found -->
+    <div th:if="${book == null}">
+        <p class="text-danger">No book found with the provided ID.</p>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

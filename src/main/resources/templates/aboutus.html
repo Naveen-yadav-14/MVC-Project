@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Product Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .about-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        .about-section h2 {
+            font-weight: 700;
+        }
+        .about-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .team-section {
+            padding: 60px 0;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .team-member h4 {
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        .team-member p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Section -->
+    <section class="about-section text-center">
+        <div class="container" th:fragment="content">
+            <h2>About Us</h2>
+            <p>Welcome to our Product Management platform, designed to help businesses streamline their product inventory and manage all product-related data efficiently. Our mission is to offer a seamless experience for tracking, editing, and managing your products with ease.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Efficiency</h4>
+                    <p>We aim to reduce the time spent managing product data by offering user-friendly interfaces.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Innovation</h4>
+                    <p>Our platform is built with cutting-edge technology to ensure smooth operation and scalability.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Customer Focus</h4>
+                    <p>We listen to your needs and continually improve the platform to meet your business goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Our Team</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 1">
+                    <h4>John Doe</h4>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 2">
+                    <h4>Jane Smith</h4>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 3">
+                    <h4>Mike Johnson</h4>
+                    <p>Product Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
